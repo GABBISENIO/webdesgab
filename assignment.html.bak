@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Sheet</title>
+    <script>
+        function showMessage() {
+            alert("Form Submitted Successfully!");
+        }
+    </script>
+</head>
+<body bgcolor="cyan">
+    <hr>
+    <h1><center>PERSONAL DATA SHEET</center></h1>
+	<hr>
+	
+
+    <form action="#" method="post" onsubmit="showMessage()">
+        <center>
+            <table border="4">
+                <tr>
+                    <td><label for="firstName">First Name:</label></td>
+                    <td><input type="text" id="firstName" name="firstName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Last Name:</label></td>
+                    <td><input type="text" id="lastName" name="lastName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+				<tr>
+                    <td><label for="placeofbirth">Place of Birth:</label></td>
+                    <td><input type="placeofbirth" id="placeofbirth" name="placeofbirth" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Birthday">Birthday:</label></td>
+                    <td><input type="tel" id="Birthday" name="Birthday" required></td>
+                </tr>
+				<tr>
+                    <td><label for="contactNumber">Contact Number:</label></td>
+                    <td><input type="tel" id="contactNumber" name="contactNumber" required></td>
+                </tr>
+                <tr>
+                    <td><label for="sex">Sex:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="sex" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="sex" value="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Choose Country:</label></td>
+                    <td>
+                        <select id="country" name="country" required>
+                            <option value="USA">United States</option>
+                            <option value="CANADA">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="PH">Philippines</option>
+                            <option value="JAPAN">Japan</option>
+							<option value="CHINA">China</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to terms and conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="notifications" name="notifications">
+                        <label for="notifications">I want to receive notifications</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </form>
+
+</body>
+</html>
